@@ -1,0 +1,69 @@
+@import "../../assets/css/variables";
+
+.landing-page {
+  background-color: #0a0a0d;
+  min-height: 100vh;
+  .jumbotron {
+    width: 100%;
+    min-height: 580px;
+    background: 
+    linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, rgba(10, 10, 13, 0.8) 75%, rgba(10, 10, 13, 1) 100%),
+    url("https://static.tvmaze.com/uploads/images/original_untouched/388/971861.jpg") top / cover no-repeat;   
+    padding: 92px 100px;
+
+    @media (max-width : 768px) {
+     padding: 92px 32px;
+    } 
+    @media (max-width : 425px) {
+     padding: 92px 16px;
+    } 
+
+    .jumbotron-text {
+      font-family: "Bebas Nueu";
+      margin-top: 60px;
+      max-width: 920px;
+      font-size: 30px;
+      color: #fff;
+      text-shadow: 5px 5px #000;
+      font-weight: 400;
+      line-height: 40px;
+      padding-bottom: 100px;
+    }
+  }
+
+  .movies-list-section {
+    display: block;
+    width: 100%;
+    padding: 0 100px;
+    transform: translateY(-148px);
+
+    @media (max-width : 768px) {
+      padding: 0 32px;
+     } 
+    @media (max-width : 425px) {
+      padding: 0 16px;
+     } 
+    .header-2 {
+      @include header2;
+    }
+    .movies-list {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      row-gap: 40px;
+      column-gap: 40px;
+
+      @media (max-width : 1200px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+      }
+
+      @media (max-width : 768px) {
+        grid-template-columns: 1fr 1fr 1fr ;
+      }
+
+      @media (max-width : 425px) {
+        grid-template-columns: 1fr 1fr ;
+      }
+    }
+  }
+}

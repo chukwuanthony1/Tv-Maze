@@ -1,0 +1,18 @@
+.user-avater-div {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 99999px;
+    background: #C9C9C9;
+    flex-shrink: 0;
+}
+.user-avater-img  {
+    height: 60px;
+    width: 60px;
+    border-radius: 99999px;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: top center;
+}
